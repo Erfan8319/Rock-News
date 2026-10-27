@@ -1,0 +1,1 @@
+export default function L(){const b='rounded bg-stone-200 dark:bg-neutral-800';return<div className="mx-auto max-w-3xl animate-pulse space-y-5"><div className={`h-9 w-40 ${b}`}/><div className={`aspect-video rounded-2xl ${b}`}/><div className={`h-10 w-4/5 ${b}`}/><div className={`h-40 ${b}`}/></div>}

@@ -1,0 +1,15 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+@layer base{
+ body{@apply bg-stone-50 text-stone-900 antialiased dark:bg-neutral-950 dark:text-neutral-100;font-family:var(--font),system-ui,sans-serif}
+ :focus-visible{@apply outline outline-2 outline-offset-2 outline-red-500}
+}
+@layer components{
+ .card{@apply rounded-2xl border border-stone-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900}
+ .btn{@apply inline-flex items-center justify-center gap-1 rounded-xl bg-red-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-red-500 active:scale-95 disabled:opacity-50}
+ .btn-ghost{@apply inline-flex items-center justify-center gap-1 rounded-xl border border-stone-300 px-4 py-2 text-sm font-semibold transition hover:bg-stone-100 dark:border-neutral-700 dark:hover:bg-neutral-800}
+ .inp{@apply w-full rounded-xl border border-stone-300 bg-white px-4 py-2.5 text-sm placeholder:text-stone-400 focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500/30 dark:border-neutral-700 dark:bg-neutral-900}
+ .chip{@apply shrink-0 whitespace-nowrap rounded-full border border-stone-300 px-4 py-1.5 text-sm font-medium transition hover:border-red-500 dark:border-neutral-700}
+ .chip-on{@apply border-red-600 bg-red-600 text-white hover:border-red-600}
+ .label{@apply mb-1 block text-sm font-medium}
+ .noscroll{scrollbar-width:none}.noscroll::-webkit-scrollbar{display:none}
+}
